@@ -3,5 +3,10 @@
 /*-jar-with-dependencies.jar
 /*.war
 /*~
-
-
+/updates.xml
+/skmTriage_linux_*.rpm
+/skmTriage_macos_*.dmg
+/skmTriage_unix_*.sh
+/skmTriage_windows_*.exe
+/md5sums
+/output.txt
