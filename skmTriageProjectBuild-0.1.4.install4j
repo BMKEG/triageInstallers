@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<install4j version="5.1.5" transformSequenceNumber="4">
+<install4j version="5.1.6" transformSequenceNumber="4">
   <directoryPresets config="./vpdmfContainer-1.1.2-SNAPSHOT-jar-with-dependencies.jar" />
-  <application name="SciKnowMine Triage" distributionSourceDir="" applicationId="8038-2221-7448-5073" mediaDir="." mediaFilePattern="${compiler:sys.shortName}_${compiler:sys.platform}_${compiler:sys.version}" compression="6" lzmaCompression="false" pack200Compression="false" excludeSignedFromPacking="true" commonExternalFiles="true" createMd5Sums="true" shrinkRuntime="true" shortName="skmTriage" publisher="Biomedical Knowledge Engineering Group @ ISI" publisherWeb="http://bmkeg.isi.edu" version="0.1.4-SNAPSHOT" allPathsRelative="true" backupOnSave="true" autoSave="true" convertDotsToUnderscores="true" macSignature="????" installerName="" javaMinVersion="1.6" javaMaxVersion="" allowBetaVM="false" jdkMode="runtimeJre" jdkName="">
+  <application name="SciKnowMine Triage" distributionSourceDir="" applicationId="8038-2221-7448-5073" mediaDir="." mediaFilePattern="${compiler:sys.shortName}_${compiler:sys.platform}_${compiler:sys.version}" compression="6" lzmaCompression="false" pack200Compression="false" excludeSignedFromPacking="true" commonExternalFiles="true" createMd5Sums="true" shrinkRuntime="true" shortName="skmTriage" publisher="Biomedical Knowledge Engineering Group @ ISI" publisherWeb="http://bmkeg.isi.edu" version="1.1.3-SNAPSHOT" allPathsRelative="true" backupOnSave="true" autoSave="true" convertDotsToUnderscores="true" macSignature="????" installerName="" javaMinVersion="1.6" javaMaxVersion="" allowBetaVM="false" jdkMode="runtimeJre" jdkName="">
     <languages skipLanguageSelection="false" languageSelectionInPrincipalLanguage="false">
       <principalLanguage id="en" customLocalizationFile="" />
       <additionalLanguages />
@@ -24,11 +24,10 @@
       <mountPoint id="22" root="" location="" mode="755" />
     </mountPoints>
     <entries>
-      <fileEntry mountPoint="22" file="./jetty-runner-8.1.9.v20130131.jar" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
-      <fileEntry mountPoint="22" file="./skmTriage-0.1.4-SNAPSHOT-jar-with-dependencies.jar" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
+      <fileEntry mountPoint="22" file="./skmTriage-1.1.3-SNAPSHOT-jar-with-dependencies.jar" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
       <fileEntry mountPoint="22" file="./README.txt" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
       <fileEntry mountPoint="22" file="./triageServer.war" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
-      <fileEntry mountPoint="22" file="./vpdmfContainer-1.1.2-SNAPSHOT-jar-with-dependencies.jar" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
+      <fileEntry mountPoint="22" file="./vpdmfContainer-1.1.3-SNAPSHOT-jar-with-dependencies.jar" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
     </entries>
     <components />
   </files>
@@ -45,7 +44,7 @@
       </splashScreen>
       <java mainClass="edu.isi.bmkeg.digitalLibrary.bin.SetSwfToolsBinDirectory" vmParameters="" arguments="" allowVMPassthroughParameters="true" preferredVM="" bundleRuntime="true">
         <classPath>
-          <archive location="skmTriage-0.1.4-SNAPSHOT-jar-with-dependencies.jar" failOnError="true" />
+          <archive location="skmTriage-1.1.3-SNAPSHOT-jar-with-dependencies.jar" failOnError="false" />
         </classPath>
         <nativeLibraryDirectories />
       </java>
@@ -74,7 +73,7 @@
       </splashScreen>
       <java mainClass="edu.isi.bmkeg.skm.triage.bin.BuildTriageDatabase" vmParameters="" arguments="" allowVMPassthroughParameters="true" preferredVM="" bundleRuntime="true">
         <classPath>
-          <archive location="skmTriage-0.1.4-SNAPSHOT-jar-with-dependencies.jar" failOnError="true" />
+          <archive location="skmTriage-1.1.3-SNAPSHOT-jar-with-dependencies.jar" failOnError="false" />
         </classPath>
         <nativeLibraryDirectories />
       </java>
@@ -103,7 +102,7 @@
       </splashScreen>
       <java mainClass="edu.isi.bmkeg.digitalLibrary.bin.EditArticleCorpus" vmParameters="" arguments="" allowVMPassthroughParameters="true" preferredVM="" bundleRuntime="true">
         <classPath>
-          <archive location="skmTriage-0.1.4-SNAPSHOT-jar-with-dependencies.jar" failOnError="true" />
+          <archive location="skmTriage-1.1.3-SNAPSHOT-jar-with-dependencies.jar" failOnError="false" />
         </classPath>
         <nativeLibraryDirectories />
       </java>
@@ -132,7 +131,7 @@
       </splashScreen>
       <java mainClass="edu.isi.bmkeg.skm.triage.bin.EditTriageCorpus" vmParameters="" arguments="" allowVMPassthroughParameters="true" preferredVM="" bundleRuntime="true">
         <classPath>
-          <archive location="skmTriage-0.1.4-SNAPSHOT-jar-with-dependencies.jar" failOnError="true" />
+          <archive location="skmTriage-1.1.3-SNAPSHOT-jar-with-dependencies.jar" failOnError="false" />
         </classPath>
         <nativeLibraryDirectories />
       </java>
@@ -149,8 +148,8 @@
       </infoPlist>
       <iconImageFiles />
     </launcher>
-    <launcher name="addPmidEncodedPdfsToCorpus" id="33" customizedId="" external="false" excludeFromMenu="false" unixMode="755" menuName="" icnsFile="" customMacBundleIdentifier="false" macBundleIdentifier="" swtApp="false" fileset="" macBundleBinary="JavaApplicationStub" addMacEntitlements="false" macEntitlementsFile="">
-      <executable name="addPmidEncodedPdfsToCorpus" type="1" iconSet="false" iconFile="" executableDir="" redirectStderr="false" stderrFile="error.log" stderrMode="overwrite" redirectStdout="false" stdoutFile="output.log" stdoutMode="overwrite" failOnStderrOutput="true" executableMode="2" changeWorkingDirectory="true" workingDirectory="." singleInstance="false" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="" executionLevel="asInvoker" checkConsoleParameter="false" globalSingleInstance="false">
+    <launcher name="buildTriageCorpusFromPdfDir" id="33" customizedId="" external="false" excludeFromMenu="false" unixMode="755" menuName="" icnsFile="" customMacBundleIdentifier="false" macBundleIdentifier="" swtApp="false" fileset="" macBundleBinary="JavaApplicationStub" addMacEntitlements="false" macEntitlementsFile="">
+      <executable name="buildTriageCorpusFromPdfDir" type="1" iconSet="false" iconFile="" executableDir="" redirectStderr="false" stderrFile="error.log" stderrMode="overwrite" redirectStdout="false" stdoutFile="output.log" stdoutMode="overwrite" failOnStderrOutput="true" executableMode="2" changeWorkingDirectory="true" workingDirectory="." singleInstance="false" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="" executionLevel="asInvoker" checkConsoleParameter="false" globalSingleInstance="false">
         <versionInfo include="false" fileVersion="" fileDescription="" legalCopyright="" internalName="" productName="" />
       </executable>
       <splashScreen show="false" autoOff="true" alwaysOnTop="true" width="0" height="0" bitmapFile="" java6SplashScreen="false">
@@ -159,38 +158,9 @@
           <versionLine x="20" y="40" text="version ${compiler:sys.version}" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
         </text>
       </splashScreen>
-      <java mainClass="edu.isi.bmkeg.digitalLibrary.bin.AddPmidEncodedPdfsToCorpus" vmParameters="" arguments="" allowVMPassthroughParameters="true" preferredVM="" bundleRuntime="true">
+      <java mainClass="edu.isi.bmkeg.skm.triage.bin.BuildTriageCorpusFromPdfDir" vmParameters="" arguments="" allowVMPassthroughParameters="true" preferredVM="" bundleRuntime="true">
         <classPath>
-          <archive location="skmTriage-0.1.4-SNAPSHOT-jar-with-dependencies.jar" failOnError="true" />
-        </classPath>
-        <nativeLibraryDirectories />
-      </java>
-      <includedFiles />
-      <unextractableFiles />
-      <vmOptionsFile mode="content" overwriteMode="0" fileMode="644">
-        <content>-Xmx${compiler:vmMaxMem}</content>
-      </vmOptionsFile>
-      <customScript mode="1" file="">
-        <content />
-      </customScript>
-      <infoPlist mode="1" file="">
-        <content />
-      </infoPlist>
-      <iconImageFiles />
-    </launcher>
-    <launcher name="buildTriageCorpusFromPmidList" id="35" customizedId="" external="false" excludeFromMenu="false" unixMode="755" menuName="" icnsFile="" customMacBundleIdentifier="false" macBundleIdentifier="" swtApp="false" fileset="" macBundleBinary="JavaApplicationStub" addMacEntitlements="false" macEntitlementsFile="">
-      <executable name="buildTriageCorpusFromPmidList" type="1" iconSet="false" iconFile="" executableDir="" redirectStderr="false" stderrFile="error.log" stderrMode="overwrite" redirectStdout="false" stdoutFile="output.log" stdoutMode="overwrite" failOnStderrOutput="true" executableMode="2" changeWorkingDirectory="true" workingDirectory="." singleInstance="false" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="" executionLevel="asInvoker" checkConsoleParameter="false" globalSingleInstance="false">
-        <versionInfo include="false" fileVersion="" fileDescription="" legalCopyright="" internalName="" productName="" />
-      </executable>
-      <splashScreen show="false" autoOff="true" alwaysOnTop="true" width="0" height="0" bitmapFile="" java6SplashScreen="false">
-        <text>
-          <statusLine x="20" y="20" text="" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
-          <versionLine x="20" y="40" text="version ${compiler:sys.version}" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
-        </text>
-      </splashScreen>
-      <java mainClass="edu.isi.bmkeg.skm.triage.bin.BuildTriageCorpusFromPmidList" vmParameters="" arguments="" allowVMPassthroughParameters="true" preferredVM="" bundleRuntime="true">
-        <classPath>
-          <archive location="skmTriage-0.1.4-SNAPSHOT-jar-with-dependencies.jar" failOnError="true" />
+          <archive location="skmTriage-1.1.3-SNAPSHOT-jar-with-dependencies.jar" failOnError="false" />
         </classPath>
         <nativeLibraryDirectories />
       </java>
@@ -219,7 +189,7 @@
       </splashScreen>
       <java mainClass="edu.isi.bmkeg.skm.triage.cleartk.bin.TriageDocumentsClassifier" vmParameters="" arguments="" allowVMPassthroughParameters="true" preferredVM="" bundleRuntime="true">
         <classPath>
-          <archive location="skmTriage-0.1.4-SNAPSHOT-jar-with-dependencies.jar" failOnError="true" />
+          <archive location="skmTriage-1.1.3-SNAPSHOT-jar-with-dependencies.jar" failOnError="false" />
         </classPath>
         <nativeLibraryDirectories />
       </java>
@@ -248,7 +218,7 @@
       </splashScreen>
       <java mainClass="edu.isi.bmkeg.container.bin.StartVpdmfContainer" vmParameters="" arguments="-context triage -webapp ${launcher:sys.launcherDirectory}triageServer.war" allowVMPassthroughParameters="true" preferredVM="" bundleRuntime="true">
         <classPath>
-          <archive location="vpdmfContainer-1.1.2-SNAPSHOT-jar-with-dependencies.jar" failOnError="false" />
+          <archive location="vpdmfContainer-1.1.3-SNAPSHOT-jar-with-dependencies.jar" failOnError="true" />
         </classPath>
         <nativeLibraryDirectories />
       </java>
@@ -265,8 +235,8 @@
       </infoPlist>
       <iconImageFiles />
     </launcher>
-    <launcher name="triageServerJetty" id="106" customizedId="" external="false" excludeFromMenu="false" unixMode="755" menuName="" icnsFile="" customMacBundleIdentifier="false" macBundleIdentifier="" swtApp="false" fileset="" macBundleBinary="JavaApplicationStub" addMacEntitlements="false" macEntitlementsFile="">
-      <executable name="triageServerJetty" type="1" iconSet="false" iconFile="" executableDir="." redirectStderr="false" stderrFile="error.log" stderrMode="overwrite" redirectStdout="false" stdoutFile="output.log" stdoutMode="overwrite" failOnStderrOutput="true" executableMode="2" changeWorkingDirectory="false" workingDirectory="." singleInstance="false" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="" executionLevel="asInvoker" checkConsoleParameter="false" globalSingleInstance="false">
+    <launcher name="dumpDatabaseToVpdmfArchive" id="162" customizedId="" external="false" excludeFromMenu="false" unixMode="755" menuName="" icnsFile="" customMacBundleIdentifier="false" macBundleIdentifier="" swtApp="false" fileset="" macBundleBinary="JavaApplicationStub" addMacEntitlements="false" macEntitlementsFile="">
+      <executable name="dumpDatabaseToVpdmfArchive" type="1" iconSet="false" iconFile="" executableDir="" redirectStderr="false" stderrFile="error.log" stderrMode="overwrite" redirectStdout="false" stdoutFile="output.log" stdoutMode="overwrite" failOnStderrOutput="true" executableMode="2" changeWorkingDirectory="true" workingDirectory="." singleInstance="false" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="" executionLevel="asInvoker" checkConsoleParameter="false" globalSingleInstance="false">
         <versionInfo include="false" fileVersion="" fileDescription="" legalCopyright="" internalName="" productName="" />
       </executable>
       <splashScreen show="false" autoOff="true" alwaysOnTop="true" width="0" height="0" bitmapFile="" java6SplashScreen="false">
@@ -275,9 +245,9 @@
           <versionLine x="20" y="40" text="version ${compiler:sys.version}" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
         </text>
       </splashScreen>
-      <java mainClass="org.mortbay.jetty.runner.Runner" vmParameters="" arguments="--path /triage ${installer:sys.contentDir}${installer:sys.fileSeparator}triageServer.war" allowVMPassthroughParameters="true" preferredVM="" bundleRuntime="true">
+      <java mainClass="edu.isi.bmkeg.vpdmf.bin.DumpDatabaseToVpdmfArchive" vmParameters="" arguments="" allowVMPassthroughParameters="true" preferredVM="" bundleRuntime="true">
         <classPath>
-          <archive location="jetty-runner-8.1.9.v20130131.jar" failOnError="false" />
+          <archive location="skmTriage-1.1.3-SNAPSHOT-jar-with-dependencies.jar" failOnError="false" />
         </classPath>
         <nativeLibraryDirectories />
       </java>
@@ -664,6 +634,9 @@
     </linuxRPM>
   </mediaSets>
   <buildIds buildAll="false">
+    <mediaSet refId="43" />
+    <mediaSet refId="45" />
+    <mediaSet refId="46" />
     <mediaSet refId="99" />
   </buildIds>
   <buildOptions verbose="false" faster="false" disableSigning="false" debug="false" />
