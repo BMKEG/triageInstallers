@@ -1,2 +1,7 @@
 /.project
-**.DS_Store
+/**.DS_Store
+/*-jar-with-dependencies.jar
+/*.war
+/*~
+
+
