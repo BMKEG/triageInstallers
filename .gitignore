@@ -8,5 +8,6 @@
 /skmTriage_macos_*.dmg
 /skmTriage_unix_*.sh
 /skmTriage_windows_*.exe
+/skmTriage_unix_*.tar.gz
 /md5sums
 /output.txt
