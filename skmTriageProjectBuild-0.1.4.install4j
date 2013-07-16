@@ -632,12 +632,20 @@
         <content />
       </postUninstallScript>
     </linuxRPM>
+    <unixArchive name="Unix Archive" id="212" customizedId="" mediaFileName="" installDir="skmTriage" overridePrincipalLanguage="false" jreBitType="all" runPostProcessor="false" postProcessor="" failOnPostProcessorError="false" useLegacyMediaFileIds="false" legacyMediaFileIds="" includedJRE="" manualJREEntry="false">
+      <excludedLaunchers />
+      <excludedBeans />
+      <overriddenPrincipalLanguage id="en" customLocalizationFile="" />
+      <exclude />
+      <variables />
+      <autoUpdate useMinUpdatableVersion="false" minUpdatableVersion="" useMaxUpdatableVersion="false" maxUpdatableVersion="">
+        <commentFiles />
+        <customAttributes />
+      </autoUpdate>
+    </unixArchive>
   </mediaSets>
   <buildIds buildAll="false">
-    <mediaSet refId="43" />
-    <mediaSet refId="45" />
-    <mediaSet refId="46" />
-    <mediaSet refId="99" />
+    <mediaSet refId="212" />
   </buildIds>
   <buildOptions verbose="false" faster="false" disableSigning="false" debug="false" />
 </install4j>
